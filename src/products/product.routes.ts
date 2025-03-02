@@ -33,7 +33,7 @@ productRouter.get("/product/:id", async (req: Request, res: Response): Promise<v
     }
 });
 
-productRouter.post("/register", async (req: Request, res: Response): Promise<void> => {
+productRouter.post("/addproduct", async (req: Request, res: Response): Promise<void> => {
     try {
         const { name, description, price } = req.body;
 
